@@ -6,7 +6,7 @@ function getRandomPassword() {
     let password = "";
 
     for (let i = 1; i < charAmount.value; i++) {
-        let randomChar = Math.floor(Math.random() * chars.length);
+        let randomChar = Math.floor(Math.random() * (chars.length + 1));
 
         password = password + chars[randomChar]
     }
